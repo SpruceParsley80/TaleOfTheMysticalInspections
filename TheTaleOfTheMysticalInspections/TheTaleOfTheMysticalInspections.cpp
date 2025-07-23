@@ -2,12 +2,21 @@
 //
 
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // system("clear");
+    // cout << "howdy ho neighrberino this program is coming soon djhfhfjdbxzjkBxhkxbvd";
+    // for (int i = 0; i < 100; i++) {
+    //     cout << endl;
+    // }
+    // cout << "hkiljfvkjdfngbjkdfbndfjbfkjbnf";
+    system("clear");
+    cout << "           The Tale of the Mystical Inspections" << endl << 
+            "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

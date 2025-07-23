@@ -15,6 +15,8 @@ namespace game {
             vector<double> statRewards;
             double significance;
         public:
+            challenge();
+            challenge(string, int, vector<double>, vector<double>, double);
             bool runBasic(player);
     };
 }

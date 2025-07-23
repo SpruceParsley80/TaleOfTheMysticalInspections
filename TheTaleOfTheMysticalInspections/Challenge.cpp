@@ -15,6 +15,20 @@ namespace game {
             vector<double> statRewards;
             double significance;
         public:
+            challenge() {
+                this->name = "Challenge";
+                this->winMargin = 0;
+                this->statRequirements = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+                this->statRewards = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+                this->significance = 0;
+            }
+            challenge(string name, int winMargin, vector<double> statRequirements, vector<double> statRewards, double significance) {
+                this->name = name;
+                this->winMargin = winMargin;
+                this->statRequirements = statRequirements;
+                this->statRewards = statRewards;
+                this->significance = significance;
+            }
             bool runBasic(player player) {
                 int winPoints = 0;
                 vector<double> playerStatsTemp = player.getAllStats();
