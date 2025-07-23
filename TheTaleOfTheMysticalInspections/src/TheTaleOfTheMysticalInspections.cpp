@@ -16,7 +16,9 @@ int main()
     // cout << "hkiljfvkjdfngbjkdfbndfjbfkjbnf";
     system("clear");
     cout << "           The Tale of the Mystical Inspections" << endl << 
-            "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&";
+            "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&" << endl <<
+            "             ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ" << endl <<
+            "                 vvuuvvuuvvuuvvuuvvuuvvuu";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
