@@ -25,9 +25,16 @@ namespace game {
                 }
                 if (winPoints >= winMargin) {
                     for (int i = 0; i < statRequirements.size(); i++) {
-                                                
+                        playerStatsTemp[i] += (statRewards[i] * (significance / 2));                        
                     }
+                    return true;
+                } else {
+                    for (int i = 0; i < statRequirements.size(); i++) {
+                        playerStatsTemp[i] -= (playerStatsTemp[i] * significance);                        
+                    }
+                    return false;
                 }
+                player.setAllStats(playerStatsTemp);
             } 
     };
 }
