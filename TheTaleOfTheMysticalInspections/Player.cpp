@@ -2,6 +2,8 @@
 #include <string>;
 #include <vector>;
 #include "Player.h";
+#include <ctime>;
+#include <cstdlib>;
 using namespace std;
 namespace game {
 	class player : public entity {
@@ -12,6 +14,10 @@ namespace game {
 		double constitution;
 		double wisdom;
 		double dexterity;
+        double reputation;
+        item weapon;
+		item armor;
+		item trinket;
         vector<double> allStats; //shall take 9 arguments, the first three being attack, health, and speed
         vector<double> setUpStats() {
             allStats.push_back(getAttack());
@@ -24,7 +30,8 @@ namespace game {
             allStats.push_back(wisdom);
             allStats.push_back(dexterity);
         }
-	public:
+        public:
+        vector<item> inventory;
 		double getStrength() {
             return strength;
         }
@@ -42,6 +49,18 @@ namespace game {
         }
 		double getDexterity() {
             return dexterity;
+        }
+        double getReputation() {
+            return dexterity;
+        }
+        item getWeapon() {
+            return weapon;
+        }
+		item getArmor() {
+            return armor;
+        }
+		item getTrinket() {
+            return trinket;
         }
         vector<double> getAllStats() {
             return allStats;

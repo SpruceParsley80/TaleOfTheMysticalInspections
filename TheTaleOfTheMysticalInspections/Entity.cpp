@@ -1,6 +1,8 @@
 #include <iostream>;
 #include "Entity.h";
 #include <string>;
+#include <ctime>;
+#include <cstdlib>;
 using namespace std;
 namespace game {
 	//hello how are you doing

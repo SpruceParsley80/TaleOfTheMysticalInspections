@@ -4,6 +4,8 @@
 #include <string>;
 #include <vector>;
 #include "Item.h";
+#include <ctime>;
+#include <cstdlib>;
 using namespace std;
 namespace game {
     class item {
@@ -12,8 +14,8 @@ namespace game {
             int rarity;
             vector<double> statBuffs;
             string type;
-            //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, 
-            //in that order, vector length 9
+            //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, reputation
+            //in that order, vector length 10
     public:
             string getName() {
                 return name;

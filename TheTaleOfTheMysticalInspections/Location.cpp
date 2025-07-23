@@ -1,5 +1,7 @@
 #include <iostream>;
 #include <string>;
+#include <ctime>;
+#include <cstdlib>;
 #include "Challenge.h";
 #include "Location.h";
 #include "LearningOpportunity.h";

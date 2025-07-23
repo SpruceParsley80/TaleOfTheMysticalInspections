@@ -2,6 +2,8 @@
 #include <iostream>;
 #include <string>;
 #include <vector>;
+#include <ctime>;
+#include <cstdlib>;
 using namespace std;
 namespace game {
     class item {
@@ -10,8 +12,8 @@ namespace game {
             int rarity;
             string type;
             vector<double> statBuffs;
-            //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, 
-            //in order, 9 total
+            //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, reputation 
+            //in order, 10 total
     public:
             string getName();
             int getRarity();
