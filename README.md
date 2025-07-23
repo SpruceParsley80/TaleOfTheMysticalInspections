@@ -1,4 +1,1 @@
-hello
-how are you
-this is a readme
-SKIBIDIHAMSTER IS NOT AFFILIATED AT ALL WITH SPRUCEPARSLEY80 AT ALL TRUST ME IT WAS A MISTAKE
+who is skibidihamster ive never known someone named that in my life
