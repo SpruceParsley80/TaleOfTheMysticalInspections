@@ -11,6 +11,7 @@ namespace game {
             string name;
             int rarity;
             vector<int> statBuffs;
+            string type;
             //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, 
             //in that order, vector length 9
     public:
@@ -49,6 +50,9 @@ namespace game {
                 }
 
             }
+            string getType() {
+                return type;
+            }
             vector<int> getStatBuffs() {
                 return statBuffs;
             }
@@ -57,6 +61,9 @@ namespace game {
             }
             void setRarity(int rarity) {
                 this->rarity = rarity;
+            }
+            void setType(string type) {
+                this->type = type;
             }
             void setStatBuffs(vector<int> statBuffs) {
                     this->statBuffs = statBuffs;
@@ -71,5 +78,8 @@ namespace game {
                 this->rarity = rarity;
                 this->statBuffs = statBuffs;
             }
+            string toString(){
+            return name + "\n" + getRarityAsString() + " " + type;
+        }
     };
 }

@@ -1,7 +1,6 @@
 #include <iostream>;
 #include "Entity.h";
 #include <string>;
-//is it working yet
 using namespace std;
 namespace game {
 	//hello how are you doing

@@ -1,10 +1,8 @@
 #pragma once
-
 #include <iostream>;
 #include <string>;
 using namespace std;
 namespace game {
-	//hello how are you doing
 	class entity {
 		private:
 			int health;
