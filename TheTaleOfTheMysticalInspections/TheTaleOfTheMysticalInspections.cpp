@@ -17,7 +17,7 @@ int main()
     system("clear");
     cout << "           The Tale of the Mystical Inspections" << endl << 
             "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&" << endl <<
-            "             ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ" << endl <<
+            "             AˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCv" << endl <<
             "                 vvuuvvuuvvuuvvuuvvuuvvuu";
 }
 
