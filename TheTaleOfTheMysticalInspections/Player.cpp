@@ -1,5 +1,6 @@
 #include <iostream>;
 #include <string>;
+#include <vector>;
 #include "Player.h";
 using namespace std;
 namespace game {
@@ -11,6 +12,18 @@ namespace game {
 		int constitution;
 		int wisdom;
 		int dexterity;
+        vector<int> allStats; //shall take 9 arguments, the first three being attack, health, and speed
+        vector<int> setUpStats() {
+            allStats.push_back(getAttack());
+            allStats.push_back(getHealth());
+            allStats.push_back(getSpeed());
+            allStats.push_back(strength);
+            allStats.push_back(charisma);
+            allStats.push_back(intelligence);
+            allStats.push_back(constitution);
+            allStats.push_back(wisdom);
+            allStats.push_back(dexterity);
+        }
 	public:
 		int getStrength() {
             return strength;
@@ -30,6 +43,9 @@ namespace game {
 		int getDexterity() {
             return dexterity;
         }
+        vector<int> getAllStats() {
+            return allStats;
+        }
 		void setStrength(int strength) {
             this->strength = strength;
         }
@@ -47,6 +63,9 @@ namespace game {
         }
 		void setDexterity(int dexterity) {
             this->dexterity = dexterity;
+        }
+        void setAllStats(vector<int> allStats) {
+            this->allStats = allStats;
         }
 	};
 }

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>;
 #include <string>;
+#include <vector>;
 #include "Entity.h";
 using namespace std;
 namespace game {
@@ -12,6 +13,8 @@ namespace game {
 		int constitution;
 		int wisdom;
 		int dexterity;
+		vector<int> allStats;
+		vector<int> setUpStats();
 	public:
 		int getStrength();
 		int getCharisma();
@@ -19,11 +22,13 @@ namespace game {
 		int getConstitution();
 		int getWisdom();
 		int getDexterity();
+		vector<int> getAllStats();
 		void setStrength(int);
 		void setCharisma(int);
 		void setIntelligence(int);
 		void setConstitution(int);
 		void setWisdom(int);
 		void setDexterity(int);
+		void setAllStats(vector<int>);
 	};
 }

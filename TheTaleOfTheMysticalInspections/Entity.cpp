@@ -11,6 +11,7 @@ namespace game {
 		int attack;
 		int speed;
 		string name;
+		vector<int> allStats;
 	public:
 		int getHealth() {
 			return this->health;
@@ -24,6 +25,9 @@ namespace game {
 		string getName() {
 			return this->name;
 		}
+		vector<int> getAllStats() {
+			return allStats;
+		}
 		void setHealth(int health) {
 			this->health = health;
 		}
@@ -35,6 +39,9 @@ namespace game {
 		}
 		void setName(string name) {
 			this->name = name;
+		}
+		void setAllStats(vector<int> allStats) {
+			this->allStats = allStats;
 		}
 	};
 }
