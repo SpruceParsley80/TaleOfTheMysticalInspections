@@ -10,7 +10,7 @@ namespace game {
     private:
             string name;
             int rarity;
-            vector<int> statBuffs;
+            vector<double> statBuffs;
             string type;
             //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, 
             //in that order, vector length 9
@@ -53,7 +53,7 @@ namespace game {
             string getType() {
                 return type;
             }
-            vector<int> getStatBuffs() {
+            vector<double> getStatBuffs() {
                 return statBuffs;
             }
             void setName(string name) {
@@ -65,7 +65,7 @@ namespace game {
             void setType(string type) {
                 this->type = type;
             }
-            void setStatBuffs(vector<int> statBuffs) {
+            void setStatBuffs(vector<double> statBuffs) {
                     this->statBuffs = statBuffs;
             }
             item() {
@@ -73,7 +73,7 @@ namespace game {
                 this->rarity = 0;
                 this->statBuffs = {0, 0, 0, 0, 0, 0, 0, 0, 0};
             }
-            item(string name, int rarity, vector<int> statBuffs) {
+            item(string name, int rarity, vector<double> statBuffs) {
                 this->name = name;
                 this->rarity = rarity;
                 this->statBuffs = statBuffs;

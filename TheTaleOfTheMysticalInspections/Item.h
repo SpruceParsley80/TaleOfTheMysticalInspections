@@ -9,7 +9,7 @@ namespace game {
             string name;
             int rarity;
             string type;
-            vector<int> statBuffs;
+            vector<double> statBuffs;
             //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, 
             //in order, 9 total
     public:
@@ -17,13 +17,13 @@ namespace game {
             int getRarity();
             string getType();
             string getRarityAsString();
-            vector<int> getStatBuffs();
+            vector<double> getStatBuffs();
             void setName(string);
             void setRarity(int);
             void setType(string);
-            void setStatBuffs(vector<int>);
+            void setStatBuffs(vector<double>);
             item();
-            item(string, int, vector<int>);
+            item(string, int, vector<double>);
             string toString();
     };
 }

@@ -5,21 +5,21 @@ using namespace std;
 namespace game {
 	class entity {
 		private:
-			int health;
-			int attack;
-			int speed;
-			vector<int> allStats;
+			double health;
+			double attack;
+			double speed;
+			vector<double> allStats;
 			string name;
 	public:
-		int getHealth();
-		int getAttack();
-		int getSpeed();
+		double getHealth();
+		double getAttack();
+		double getSpeed();
 		string getName();
-		vector<int> getAllStats();
-		void setHealth(int health);
-		void setAttack(int attack);
-		void setSpeed(int speed);
+		vector<double> getAllStats();
+		void setHealth(double health);
+		void setAttack(double attack);
+		void setSpeed(double speed);
 		void setName(string name);
-		void setAllStats(vector<int>);
+		void setAllStats(vector<double>);
 	};
 }

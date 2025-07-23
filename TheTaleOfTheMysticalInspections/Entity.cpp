@@ -6,40 +6,40 @@ namespace game {
 	//hello how are you doing
 	class entity {
 	private:
-		int health;
-		int attack;
-		int speed;
+		double health;
+		double attack;
+		double speed;
 		string name;
-		vector<int> allStats;
+		vector<double> allStats;
 	public:
-		int getHealth() {
+		double getHealth() {
 			return this->health;
 		}
-		int getAttack() {
+		double getAttack() {
 			return this->attack;
 		}
-		int getSpeed() {
+		double getSpeed() {
 			return this->speed;
 		}
 		string getName() {
 			return this->name;
 		}
-		vector<int> getAllStats() {
+		vector<double> getAllStats() {
 			return allStats;
 		}
-		void setHealth(int health) {
+		void setHealth(double health) {
 			this->health = health;
 		}
-		void setAttack(int attack) {
+		void setAttack(double attack) {
 			this->attack = attack;
 		}
-		void setSpeed(int speed) {
+		void setSpeed(double speed) {
 			this->speed = speed;
 		}
 		void setName(string name) {
 			this->name = name;
 		}
-		void setAllStats(vector<int> allStats) {
+		void setAllStats(vector<double> allStats) {
 			this->allStats = allStats;
 		}
 	};

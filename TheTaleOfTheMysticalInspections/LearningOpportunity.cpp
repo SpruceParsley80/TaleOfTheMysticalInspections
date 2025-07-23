@@ -1,15 +1,12 @@
 #pragma once;
 #include <iostream>;
 #include <string>;
-#include <vector>;
-#include "Challenge.h";
 #include "LearningOpportunity.h";
 using namespace std;
 using namespace game;
 namespace game {
-    class location {
+    class learningOpportunity {
         string name;
-        vector<challenge> challenges;
-        vector<learningOpportunity> learningOpportunities; 
+        vector<double> statRewards;
     };
 }

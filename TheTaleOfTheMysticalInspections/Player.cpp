@@ -6,14 +6,14 @@ using namespace std;
 namespace game {
 	class player : public entity {
 	private:
-		int strength;
-		int charisma;
-		int intelligence;
-		int constitution;
-		int wisdom;
-		int dexterity;
-        vector<int> allStats; //shall take 9 arguments, the first three being attack, health, and speed
-        vector<int> setUpStats() {
+		double strength;
+		double charisma;
+		double intelligence;
+		double constitution;
+		double wisdom;
+		double dexterity;
+        vector<double> allStats; //shall take 9 arguments, the first three being attack, health, and speed
+        vector<double> setUpStats() {
             allStats.push_back(getAttack());
             allStats.push_back(getHealth());
             allStats.push_back(getSpeed());
@@ -25,46 +25,49 @@ namespace game {
             allStats.push_back(dexterity);
         }
 	public:
-		int getStrength() {
+		double getStrength() {
             return strength;
         }
-		int getCharisma() {
+		double getCharisma() {
             return charisma;
         }
-		int getIntelligence() {
+		double getIntelligence() {
             return intelligence;
         }
-		int getConstitution() {
+		double getConstitution() {
             return constitution;
         }
-		int getWisdom() {
+		double getWisdom() {
             return wisdom;
         }
-		int getDexterity() {
+		double getDexterity() {
             return dexterity;
         }
-        vector<int> getAllStats() {
+        vector<double> getAllStats() {
             return allStats;
         }
-		void setStrength(int strength) {
+		void setStrength(double strength) {
             this->strength = strength;
         }
-		void setCharisma(int charisma) {
+		void setCharisma(double charisma) {
             this->charisma = charisma;
         }
-		void setIntelligence(int intelligence) {
+		void setIntelligence(double intelligence) {
             this->intelligence = intelligence;
         }
-		void setConstitution(int constitution) {
+		void setConstitution(double constitution) {
             this->constitution = constitution;
         }
-		void setWisdom(int wisdom) {
+		void setWisdom(double wisdom) {
             this->wisdom = wisdom;
         }
-		void setDexterity(int dexterity) {
+		void setDexterity(double dexterity) {
             this->dexterity = dexterity;
         }
-        void setAllStats(vector<int> allStats) {
+        void setAllStats(vector<double> allStats) {
+            setHealth(allStats[0]);
+            setAttack(allStats[1]);
+            setSpeed(allStats[2]);
             this->allStats = allStats;
         }
 	};
