@@ -10,8 +10,12 @@ using namespace std;
 using namespace game;
 namespace game {
     class location {
+        private:
         string name;
         vector<challenge> challenges;
         vector<learningOpportunity> learningOpportunities; 
+        public:
+        location();
+        location(string, vector<challenge>, vector<learningOpportunity>);
     };
 }

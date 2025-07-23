@@ -8,6 +8,7 @@ using namespace std;
 using namespace game;
 namespace game {
     class learningOpportunity {
+        private:
         string name;
         vector<double> statRewards;
     };
