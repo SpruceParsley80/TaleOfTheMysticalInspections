@@ -41,6 +41,7 @@ namespace game {
                 cout << "Failed";
                 win = false;
             }
+            cout << endl;
             return win;
         }
     };

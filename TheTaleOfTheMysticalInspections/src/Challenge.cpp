@@ -40,14 +40,16 @@ namespace game {
                 }
                 if (winPoints >= winMargin) {
                     for (int i = 0; i < statRequirements.size(); i++) {
-                        playerStatsTemp[i] += (statRewards[i] * (significance / 2));     
+                        playerStatsTemp[i] += (statRewards[i] * (significance / 2));
+                        cout << "You win";     
                         win = true;                   
                     }
                     
                 } else {
                     for (int i = 0; i < statRequirements.size(); i++) {
                         playerStatsTemp[i] -= (playerStatsTemp[i] * significance);    
-                        win = false;                  
+                        win = false;
+                        cout << "You lose";                  
                     }
                 }
                 player.setAllStats(playerStatsTemp);

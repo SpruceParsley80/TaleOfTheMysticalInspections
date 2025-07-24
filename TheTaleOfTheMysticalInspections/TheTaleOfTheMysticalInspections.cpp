@@ -3,9 +3,21 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <string>;
+#include <vector>;
+#include <ctime>;
+#include "Entity.h";
+#include "Item.h";
+#include "Challenge.h";
+#include "Player.h";
+#include "Location.h";
+#include "LearningOpportunity.h";
 
 using namespace std;
 
+string waiter;
+learningOpportunity questioon;
+player me;
 int main()
 {
     // system("clear");
@@ -18,7 +30,12 @@ int main()
     cout << "           The Tale of the Mystical Inspections" << endl << 
             "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&" << endl <<
             "             AˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCv" << endl <<
-            "                 vvuuvvuuvvuuvvuuvvuuvvuu";
+            "                 vvuuvvuuvvuuvvuuvvuuvvuu" << endl;
+    cout << "Press enter ";
+    cin >> waiter;
+    system("clear");
+    questioon.runBasic("Why did the chicken cross the road?", "to get to the other side", me);
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
