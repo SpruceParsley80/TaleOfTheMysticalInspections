@@ -31,6 +31,7 @@ namespace game {
             }
             bool runBasic(player player) {
                 int winPoints = 0;
+                bool win;
                 vector<double> playerStatsTemp = player.getAllStats();
                 for (int i = 0; i < statRequirements.size(); i++) {
                     if (statRequirements[i] >= playerStatsTemp[i]) {
@@ -39,16 +40,18 @@ namespace game {
                 }
                 if (winPoints >= winMargin) {
                     for (int i = 0; i < statRequirements.size(); i++) {
-                        playerStatsTemp[i] += (statRewards[i] * (significance / 2));                        
+                        playerStatsTemp[i] += (statRewards[i] * (significance / 2));     
+                        win = true;                   
                     }
-                    return true;
+                    
                 } else {
                     for (int i = 0; i < statRequirements.size(); i++) {
-                        playerStatsTemp[i] -= (playerStatsTemp[i] * significance);                        
+                        playerStatsTemp[i] -= (playerStatsTemp[i] * significance);    
+                        win = false;                  
                     }
-                    return false;
                 }
                 player.setAllStats(playerStatsTemp);
+                return win;
             } 
     };
 }
