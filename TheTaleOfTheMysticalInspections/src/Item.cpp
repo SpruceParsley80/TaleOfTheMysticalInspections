@@ -14,7 +14,10 @@ item::item(string name, int rarity, vector<double> statBuffs) {
 item::item() {
     this->name = "New Item";
     this->rarity = 0;
-    this->statBuffs = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+    // this->statBuffs = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+    for (int i = 0; i < 10; i++) {
+                    statBuffs.push_back(0);
+                }
 }
             string item::getName() {
                 return name;

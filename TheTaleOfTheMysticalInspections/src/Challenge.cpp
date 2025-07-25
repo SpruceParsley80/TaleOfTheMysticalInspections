@@ -8,8 +8,14 @@ using namespace game;
             challenge::challenge() {
                 this->name = "Challenge";
                 this->winMargin = 0;
-                this->statRequirements = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-                this->statRewards = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+                // this->statRequirements = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+                for (int i = 0; i < 10; i++) {
+                    statRequirements.push_back(0);
+                }
+                // this->statRewards = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+                for (int i = 0; i < 10; i++) {
+                    statRewards.push_back(0);
+                }
                 this->significance = 0;
             }
             challenge::challenge(string name, int winMargin, vector<double> statRequirements, vector<double> statRewards, double significance) {
