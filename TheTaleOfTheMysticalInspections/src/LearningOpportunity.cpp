@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <ctime>
 #include <cstdlib>
@@ -14,7 +15,25 @@ using namespace game;
             return statRewards;
         }
         bool learningOpportunity::runBasic(string question, string correctAnswer, player player) {
+            srand(time(nullptr));
             string playerAnswer;
+            string funnyResponse;
+            ifstream inputFile("/Users/masonsacksteder/TheTaleOfTheMysticalInspections-main/TheTaleOfTheMysticalInspections/sentences.txt");
+            string test;
+            int lineCounter;
+            // if (inputFile.is_open()) {
+            //     while (getline(inputFile, test)) {
+            //         lineCounter++;
+            //     }
+            // }
+            int funny = rand() % 135;
+            // cout << funny;
+            if (inputFile.is_open()) {
+            for (int i = 0; i < funny; i++) {
+                getline(inputFile, funnyResponse);
+            }
+        }
+            inputFile.close();
             // vector<double> stats = player.getAllStats();
             cout << question << " ";
             getline(cin, playerAnswer);
@@ -22,7 +41,8 @@ using namespace game;
             std::transform(playerAnswer.begin(), playerAnswer.end(), playerAnswer.begin(), ::tolower);
             // cout << playerAnswer;
             if (playerAnswer == correctAnswer) {
-                cout << "Passed";
+                cout << "Passed" << endl;
+                cout << "\033[3m" << funnyResponse << "\033[0m";
                 win = true;
                 // for (int i = 0; i < stats.size(); i++) {
                 //     stats[i] += this->statRewards[i];
@@ -30,7 +50,8 @@ using namespace game;
                 // player.setAllStats(stats);
                 
             } else {
-                cout << "Failed";
+                cout << "Failed" << endl;
+                cout << "\033[3m" << funnyResponse << "\033[0m";
                 win = false;
             }
             cout << endl;
