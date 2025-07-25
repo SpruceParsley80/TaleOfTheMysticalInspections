@@ -14,8 +14,10 @@ using namespace game;
 string waiter;
 learningOpportunity questioon;
 player me;
+vector<double> statBase(10, 0.0);
 int main()
 {
+    me.setAllStats(statBase);
     // system("clear");
     // cout << "howdy ho neighrberino this program is coming soon djhfhfjdbxzjkBxhkxbvd";
     // for (int i = 0; i < 100; i++) {
@@ -24,13 +26,15 @@ int main()
     // cout << "hkiljfvkjdfngbjkdfbndfjbfkjbnf";
     system("clear");
     questioon.runBasic("Why did the chicken cross the road?", "to get to the other side", me);
-    cout << "           The Tale of the Mystical Inspections" << endl << 
-            "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&" << endl <<
-            "             AˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCv" << endl <<
-            "                 vvuuvvuuvvuuvvuuvvuuvvuu" << endl;
     cout << "Press enter ";
-    cin >> waiter;
+    getline(cin, waiter);
     if (waiter == "") {
+        cout << "enter pressed :)" << endl;
+        system("clear");
+        cout << "           The Tale of the Mystical Inspections" << endl << 
+                "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&" << endl <<
+                "             AˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCv" << endl <<
+                "                 vvuuvvuuvvuuvvuuvvuuvvuu" << endl;
     }
 
 }
