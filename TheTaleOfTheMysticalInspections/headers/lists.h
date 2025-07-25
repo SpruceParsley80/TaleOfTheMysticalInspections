@@ -1,5 +1,4 @@
 #pragma once
-#define LISTS_H
 #include <iostream>
 #include <string>
 #include <vector>

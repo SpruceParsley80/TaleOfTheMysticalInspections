@@ -1,5 +1,4 @@
 #pragma once
-#define ITEM_H
 #include <iostream>
 #include <string>
 #include <vector>
