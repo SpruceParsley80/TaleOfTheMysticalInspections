@@ -3,17 +3,13 @@
 
 #include <iostream>
 #include <cstdlib>
-#include <string>;
-#include <vector>;
-#include <ctime>;
-#include "Entity.h";
-#include "Item.h";
-#include "Challenge.h";
-#include "Player.h";
-#include "Location.h";
-#include "LearningOpportunity.h";
+#include <string>
+#include <vector>
+#include <ctime>
+#include "LearningOpportunity.h"
+#include "Player.h"
 
-using namespace std;
+using namespace game;
 
 string waiter;
 learningOpportunity questioon;

@@ -1,12 +1,11 @@
-#include <iostream>;
-#include <string>;
-#include <ctime>;
-#include <cstdlib>;
-#include "Challenge.h";
-#include "Location.h";
-#include "LearningOpportunity.h";
+#include <iostream>
+#include <string>
+#include <ctime>
+#include <cstdlib>
+#include "Challenge.h"
+#include "Location.h"
+#include "LearningOpportunity.h"
 using namespace std;
-using namespace game;
 namespace game {
     class location {
         private:

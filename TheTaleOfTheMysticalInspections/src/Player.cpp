@@ -1,9 +1,9 @@
-#include <iostream>;
-#include <string>;
-#include <vector>;
-#include "Player.h";
-#include <ctime>;
-#include <cstdlib>;
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Player.h"
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 namespace game {
 	class player : public entity {

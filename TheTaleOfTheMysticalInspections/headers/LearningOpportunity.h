@@ -1,11 +1,11 @@
-#pragma once;
-#include <iostream>;
-#include <string>;
-#include <vector>;
-#include <ctime>;
-#include <cstdlib>;
+#pragma once
+#include <iostream>
+#include <string>
+#include <vector>
+#include <ctime>
+#include <cstdlib>
+#include "Player.h"
 using namespace std;
-using namespace game;
 namespace game {
     class learningOpportunity {
         private:

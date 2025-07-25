@@ -1,9 +1,9 @@
-#include <iostream>;
-#include <string>;
-#include "Player.h";
-#include "Challenge.h";
-#include <ctime>;
-#include <cstdlib>;
+#include <iostream>
+#include <string>
+#include "Player.h"
+#include "Challenge.h"
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 using namespace game;
 namespace game {

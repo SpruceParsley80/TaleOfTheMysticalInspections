@@ -1,14 +1,13 @@
-#pragma once;
-#include <iostream>;
-#include <string>;
-#include <ctime>;
-#include <cstdlib>;
-#include <algorithm>;
-#include <cctype>;
-#include "Player.h";
-#include "LearningOpportunity.h";
+#pragma once
+#include <iostream>
+#include <string>
+#include <ctime>
+#include <cstdlib>
+#include <algorithm>
+#include <cctype>
+#include "Player.h"
+#include "LearningOpportunity.h"
 using namespace std;
-using namespace game;
 namespace game {
     class learningOpportunity {
         private:

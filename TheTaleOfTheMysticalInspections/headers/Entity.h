@@ -1,8 +1,8 @@
 #pragma once
-#include <iostream>;
-#include <string>;
-#include <ctime>;
-#include <cstdlib>;
+#include <iostream>
+#include <string>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 namespace game {
 	class entity {

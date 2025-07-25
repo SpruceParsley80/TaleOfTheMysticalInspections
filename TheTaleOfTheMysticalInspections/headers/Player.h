@@ -1,11 +1,11 @@
 #pragma once
-#include <iostream>;
-#include <string>;
-#include <vector>;
-#include "Entity.h";
-#include "Item.h";
-#include <ctime>;
-#include <cstdlib>;
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Entity.h"
+#include "Item.h"
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 namespace game {
 	class player : public entity {
