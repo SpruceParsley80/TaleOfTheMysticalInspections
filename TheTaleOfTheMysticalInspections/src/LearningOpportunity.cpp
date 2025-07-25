@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -7,20 +6,14 @@
 #include <cctype>
 #include "Player.h"
 #include "LearningOpportunity.h"
-using namespace std;
-namespace game {
-    class learningOpportunity {
-        private:
-        string name;
-        vector<double> statRewards;
-        public:
-        string getName() {
+using namespace game;
+        string learningOpportunity::getName() {
             return name; 
         }
-        vector<double> getStatRewards() {
+        vector<double> learningOpportunity::getStatRewards() {
             return statRewards;
         }
-        bool runBasic(string question, string correctAnswer, player player) {
+        bool learningOpportunity::runBasic(string question, string correctAnswer, player player) {
             string playerAnswer;
             vector<double> stats = player.getAllStats();
             cout << question << " ";
@@ -43,5 +36,3 @@ namespace game {
             cout << endl;
             return win;
         }
-    };
-}

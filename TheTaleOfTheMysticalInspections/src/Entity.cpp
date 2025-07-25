@@ -2,47 +2,36 @@
 #include "Entity.h"
 #include <string>
 #include <ctime>
-#include <cstdlib>`
-using namespace std;
-namespace game {
+#include <cstdlib>
+using namespace game;
 	//hello how are you doing
-	class entity {
-	private:
-		double health;
-		double attack;
-		double speed;
-		string name;
-		vector<double> allStats;
-	public:
-		double getHealth() {
+		double entity::getHealth() {
 			return this->health;
 		}
-		double getAttack() {
+		double entity::getAttack() {
 			return this->attack;
 		}
-		double getSpeed() {
+		double entity::getSpeed() {
 			return this->speed;
 		}
-		string getName() {
+		string entity::getName() {
 			return this->name;
 		}
-		vector<double> getAllStats() {
+		vector<double> entity::getAllStats() {
 			return allStats;
 		}
-		void setHealth(double health) {
+		void entity::setHealth(double health) {
 			this->health = health;
 		}
-		void setAttack(double attack) {
+		void entity::setAttack(double attack) {
 			this->attack = attack;
 		}
-		void setSpeed(double speed) {
+		void entity::setSpeed(double speed) {
 			this->speed = speed;
 		}
-		void setName(string name) {
+		void entity::setName(string name) {
 			this->name = name;
 		}
-		void setAllStats(vector<double> allStats) {
+		void entity::setAllStats(vector<double> allStats) {
 			this->allStats = allStats;
 		}
-	};
-}

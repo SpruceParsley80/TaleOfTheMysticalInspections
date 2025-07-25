@@ -4,32 +4,22 @@
 #include "Challenge.h"
 #include <ctime>
 #include <cstdlib>
-using namespace std;
 using namespace game;
-namespace game {
-    class challenge {
-        private:
-            string name;
-            int winMargin;
-            vector<double> statRequirements;
-            vector<double> statRewards;
-            double significance;
-        public:
-            challenge() {
+            challenge::challenge() {
                 this->name = "Challenge";
                 this->winMargin = 0;
                 this->statRequirements = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                 this->statRewards = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                 this->significance = 0;
             }
-            challenge(string name, int winMargin, vector<double> statRequirements, vector<double> statRewards, double significance) {
+            challenge::challenge(string name, int winMargin, vector<double> statRequirements, vector<double> statRewards, double significance) {
                 this->name = name;
                 this->winMargin = winMargin;
                 this->statRequirements = statRequirements;
                 this->statRewards = statRewards;
                 this->significance = significance;
             }
-            bool runBasic(player player) {
+            bool challenge::runBasic(player player) {
                 int winPoints = 0;
                 bool win;
                 vector<double> playerStatsTemp = player.getAllStats();
@@ -55,5 +45,3 @@ namespace game {
                 player.setAllStats(playerStatsTemp);
                 return win;
             } 
-    };
-}

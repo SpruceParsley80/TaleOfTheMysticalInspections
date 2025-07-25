@@ -4,24 +4,25 @@
 #include "Item.h"
 #include <ctime>
 #include <cstdlib>
-using namespace std;
-namespace game {
-    class item {
-    private:
-            string name;
-            int rarity;
-            vector<double> statBuffs;
-            string type;
-            //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, reputation
-            //in that order, vector length 10
-    public:
-            string getName() {
+using namespace game;
+
+item::item(string name, int rarity, vector<double> statBuffs) {
+    this->name = name;
+    this->rarity = rarity;
+    this->statBuffs = statBuffs;
+}
+item::item() {
+    this->name = "New Item";
+    this->rarity = 0;
+    this->statBuffs = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+}
+            string item::getName() {
                 return name;
             }
-            int getRarity() {
+            int item::getRarity() {
                 return rarity;
             }
-            string getRarityAsString() {
+            string item::getRarityAsString() {
                 switch (rarity) {
                     case 0:
                         return "Common";
@@ -50,36 +51,24 @@ namespace game {
                 }
 
             }
-            string getType() {
+            string item::getType() {
                 return type;
             }
-            vector<double> getStatBuffs() {
+            vector<double> item::getStatBuffs() {
                 return statBuffs;
             }
-            void setName(string name) {
+            void item::setName(string name) {
                 this->name = name;
             }
-            void setRarity(int rarity) {
+            void item::setRarity(int rarity) {
                 this->rarity = rarity;
             }
-            void setType(string type) {
+            void item::setType(string type) {
                 this->type = type;
             }
-            void setStatBuffs(vector<double> statBuffs) {
+            void item::setStatBuffs(vector<double> statBuffs) {
                     this->statBuffs = statBuffs;
             }
-            item() {
-                this->name = "New Item";
-                this->rarity = 0;
-                this->statBuffs = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-            }
-            item(string name, int rarity, vector<double> statBuffs) {
-                this->name = name;
-                this->rarity = rarity;
-                this->statBuffs = statBuffs;
-            }
-            string toString(){
+            string item::toString(){
             return name + "\n" + getRarityAsString() + " " + type;
         }
-    };
-}

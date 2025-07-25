@@ -5,23 +5,14 @@
 #include "Challenge.h"
 #include "Location.h"
 #include "LearningOpportunity.h"
-using namespace std;
-namespace game {
-    class location {
-        private:
-            string name;
-            vector<challenge> challenges;
-            vector<learningOpportunity> learningOpportunities; 
-        public:
-            location() {
+using namespace game;
+            location::location() {
                 this->name = "Place";
                 this->challenges;
                 this->learningOpportunities;
             }
-            location(string name, vector<challenge> challenges, vector<learningOpportunity> learningOpportunities) {
+            location::location(string name, vector<challenge> challenges, vector<learningOpportunity> learningOpportunities) {
                 this->name = name;
                 this->challenges = challenges;
                 this->learningOpportunities = learningOpportunities;
             }
-    };
-}

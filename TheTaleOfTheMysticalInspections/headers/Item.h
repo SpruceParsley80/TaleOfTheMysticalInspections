@@ -1,4 +1,5 @@
 #pragma once
+#define ITEM_H
 #include <iostream>
 #include <string>
 #include <vector>
@@ -15,6 +16,8 @@ namespace game {
             //health, attack, speed, strength, charisma, intelligence, constitution, wisdom, dexterity, reputation 
             //in order, 10 total
     public:
+                item();
+                item(string, int, vector<double>);
             string getName();
             int getRarity();
             string getType();
@@ -24,8 +27,6 @@ namespace game {
             void setRarity(int);
             void setType(string);
             void setStatBuffs(vector<double>);
-            item();
-            item(string, int, vector<double>);
             string toString();
     };
 }

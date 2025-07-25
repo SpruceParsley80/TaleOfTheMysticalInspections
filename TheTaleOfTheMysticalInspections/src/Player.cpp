@@ -4,90 +4,61 @@
 #include "Player.h"
 #include <ctime>
 #include <cstdlib>
-using namespace std;
-namespace game {
-	class player : public entity {
-	private:
-		double strength;
-		double charisma;
-		double intelligence;
-		double constitution;
-		double wisdom;
-		double dexterity;
-        double reputation;
-        item weapon;
-		item armor;
-		item trinket;
-        vector<double> allStats; //shall take 9 arguments, the first three being attack, health, and speed
-        vector<double> setUpStats() {
-            allStats.push_back(getAttack());
-            allStats.push_back(getHealth());
-            allStats.push_back(getSpeed());
-            allStats.push_back(strength);
-            allStats.push_back(charisma);
-            allStats.push_back(intelligence);
-            allStats.push_back(constitution);
-            allStats.push_back(wisdom);
-            allStats.push_back(dexterity);
-        }
-        public:
-        vector<item> inventory;
-		double getStrength() {
+using namespace game;
+		double player::getStrength() {
             return strength;
         }
-		double getCharisma() {
+		double player::getCharisma() {
             return charisma;
         }
-		double getIntelligence() {
+		double player::getIntelligence() {
             return intelligence;
         }
-		double getConstitution() {
+		double player::getConstitution() {
             return constitution;
         }
-		double getWisdom() {
+		double player::getWisdom() {
             return wisdom;
         }
-		double getDexterity() {
+		double player::getDexterity() {
             return dexterity;
         }
-        double getReputation() {
+        double player::getReputation() {
             return dexterity;
         }
-        item getWeapon() {
+        item player::getWeapon() {
             return weapon;
         }
-		item getArmor() {
+		item player::getArmor() {
             return armor;
         }
-		item getTrinket() {
+		item player::getTrinket() {
             return trinket;
         }
-        vector<double> getAllStats() {
+        vector<double> player::getAllStats() {
             return allStats;
         }
-		void setStrength(double strength) {
+		void player::setStrength(double strength) {
             this->strength = strength;
         }
-		void setCharisma(double charisma) {
+		void player::setCharisma(double charisma) {
             this->charisma = charisma;
         }
-		void setIntelligence(double intelligence) {
+		void player::setIntelligence(double intelligence) {
             this->intelligence = intelligence;
         }
-		void setConstitution(double constitution) {
+		void player::setConstitution(double constitution) {
             this->constitution = constitution;
         }
-		void setWisdom(double wisdom) {
+		void player::setWisdom(double wisdom) {
             this->wisdom = wisdom;
         }
-		void setDexterity(double dexterity) {
+		void player::setDexterity(double dexterity) {
             this->dexterity = dexterity;
         }
-        void setAllStats(vector<double> allStats) {
+        void player::setAllStats(vector<double> allStats) {
             setHealth(allStats[0]);
             setAttack(allStats[1]);
             setSpeed(allStats[2]);
             this->allStats = allStats;
         }
-	};
-}
