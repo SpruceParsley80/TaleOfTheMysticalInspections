@@ -15,19 +15,19 @@ using namespace game;
         }
         bool learningOpportunity::runBasic(string question, string correctAnswer, player player) {
             string playerAnswer;
-            vector<double> stats = player.getAllStats();
+            // vector<double> stats = player.getAllStats();
             cout << question << " ";
-            cin >> playerAnswer;
+            getline(cin, playerAnswer);
             bool win;
             std::transform(playerAnswer.begin(), playerAnswer.end(), playerAnswer.begin(), ::tolower);
-
+            // cout << playerAnswer;
             if (playerAnswer == correctAnswer) {
                 cout << "Passed";
                 win = true;
-                for (int i = 0; i < stats.size(); i++) {
-                    stats[i] += statRewards[i];
-                }
-                player.setAllStats(stats);
+                // for (int i = 0; i < stats.size(); i++) {
+                //     stats[i] += this->statRewards[i];
+                // }
+                // player.setAllStats(stats);
                 
             } else {
                 cout << "Failed";

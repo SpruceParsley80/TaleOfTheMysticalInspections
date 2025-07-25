@@ -23,14 +23,15 @@ int main()
     // }
     // cout << "hkiljfvkjdfngbjkdfbndfjbfkjbnf";
     system("clear");
+    questioon.runBasic("Why did the chicken cross the road?", "to get to the other side", me);
     cout << "           The Tale of the Mystical Inspections" << endl << 
             "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&" << endl <<
             "             AˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCv" << endl <<
             "                 vvuuvvuuvvuuvvuuvvuuvvuu" << endl;
     cout << "Press enter ";
     cin >> waiter;
-    system("clear");
-    questioon.runBasic("Why did the chicken cross the road?", "to get to the other side", me);
+    if (waiter == "") {
+    }
 
 }
 
