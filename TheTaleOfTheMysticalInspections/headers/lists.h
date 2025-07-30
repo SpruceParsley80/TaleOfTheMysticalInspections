@@ -11,6 +11,7 @@
 #include "Location.h"
 #include "LearningOpportunity.h"
 using namespace std;
+
 namespace game {
     //stat order:
     //health, attack, speed, strength, charisma, dexterity, intelligence, constitution, wisdom, reputation

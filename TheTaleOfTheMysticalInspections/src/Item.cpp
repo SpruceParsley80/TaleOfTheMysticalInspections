@@ -4,7 +4,9 @@
 #include "Item.h"
 #include <ctime>
 #include <cstdlib>
+#include "utility.h"
 using namespace game;
+
 
 item::item(string name, int rarity, vector<double> statBuffs) {
     this->name = name;

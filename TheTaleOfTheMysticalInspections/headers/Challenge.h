@@ -15,8 +15,9 @@ namespace game {
             vector<double> statRewards;
             double significance;
         public:
+            string getName();
             challenge();
-            challenge(string, int, vector<double>, vector<double>, double);
+            challenge(string, int, const vector<double>&, const vector<double>&, double);
             bool runBasic(player);
     };
 }

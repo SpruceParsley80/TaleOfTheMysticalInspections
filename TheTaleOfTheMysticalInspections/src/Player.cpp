@@ -4,7 +4,9 @@
 #include "Player.h"
 #include <ctime>
 #include <cstdlib>
+#include "utility.h"
 using namespace game;
+
 		double player::getStrength() {
             return strength;
         }

@@ -2,19 +2,21 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <variant>
 #include "Challenge.h"
 #include "LearningOpportunity.h"
 #include <ctime>
 #include <cstdlib>
 using namespace std;
+game::utility help;
 namespace game {
     class location {
         private:
         string name;
-        vector<challenge> challenges;
-        vector<learningOpportunity> learningOpportunities; 
+        vector<variant<learningOpportunity, challenge>> events;
         public:
         location();
-        location(string, vector<challenge>, vector<learningOpportunity>);
+        location(string, vector<variant<learningOpportunity, challenge>>);
+        void playThroughBasic(player player);
     };
 }

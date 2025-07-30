@@ -3,7 +3,9 @@
 #include <string>
 #include <ctime>
 #include <cstdlib>
+#include "utility.h"
 using namespace game;
+
 	//hello how are you doing
 		double entity::getHealth() {
 			return this->health;

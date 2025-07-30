@@ -7,14 +7,16 @@
 #include <vector>
 #include <ctime>
 #include "LearningOpportunity.h"
+#include "Challenge.h"
 #include "Player.h"
+#include "utility.h"
 
 using namespace game;
 
-string waiter;
-learningOpportunity questioon;
+vector<double> statBase = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+learningOpportunity questioon("hello", {1.1, 1.1, 2.1, 1.3, 2.456252, 5.2, 3.14159, 132144.0, 3.0, 3.0});
+challenge hello("Hello", 3, {1.0, 1.0, 2.0, 1.0, 2.0, 5.0, 2.0, 1.0, 1.0, 1.0}, {1.0, 1.0, 2.0, 1.0, 2.0, 5.0, 2.0, 1.0, 1.0, 1.0}, 0.2);
 player me;
-vector<double> statBase(10, 0.0);
 int main()
 {
     me.setAllStats(statBase);
@@ -26,9 +28,9 @@ int main()
     // cout << "hkiljfvkjdfngbjkdfbndfjbfkjbnf";
     system("clear");
     questioon.runBasic("Why did the chicken cross the road?", "to get to the other side", me);
+    hello.runBasic(me);
     cout << "Press enter ";
-    getline(cin, waiter);
-    if (waiter == "") {
+    if (utility::waitForEnter()) {
         cout << "enter pressed :)" << endl;
         system("clear");
         cout << "           The Tale of the Mystical Inspections" << endl << 
