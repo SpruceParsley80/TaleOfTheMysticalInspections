@@ -8,7 +8,6 @@
 #include <ctime>
 #include <cstdlib>
 using namespace std;
-game::utility help;
 namespace game {
     class location {
         private:

@@ -44,7 +44,6 @@ using namespace game;
             //         lineCounter++;
             //     }
             // }
-            cout << endl << "Learning Opportunity: \033[3m" << name << "\033[0m" << endl;
             cout << "Your Current Stats: " << endl << endl;
                     for (int i = 0; i < player.getAllStats().size(); i++) {
                         cout << player.getAllStats()[i] << endl;

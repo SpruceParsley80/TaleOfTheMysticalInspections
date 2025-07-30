@@ -18,8 +18,11 @@ namespace game {
     //challenges
     challenge makeDinner("Make Dinner", 3, {0, 0, 0, 0, 0.3, 1.5, 2, 1, 1.2, 0}, {0, 0, 0, 0.2, 0.1, 0.2, 0.1, 0.1, 1}, 0.2);
     challenge doTheDishes("Do the Dishes", 3, {0, 0, 0, 0, 0.4, 1.2, 0.6, 0.3, 0.2, 0}, {0, 0, 0, 0, 0.3, 1.3, 0.5, 0.4, 0.1, 0}, 0.3);
+    learningOpportunity questioon("hello", {1.1, 1.1, 2.1, 1.3, 2.456252, 5.2, 3.14159, 132144.0, 3.0, 3.0});
+    challenge hello("Hello", 3, {1.0, 1.0, 2.0, 1.0, 2.0, 5.0, 2.0, 1.0, 1.0, 1.0}, {1.0, 1.0, 2.0, 1.0, 2.0, 5.0, 2.0, 1.0, 1.0, 1.0}, 0.2);
 
 
     //locations
     location home();
+    location test("Test", {questioon, hello});
 }
