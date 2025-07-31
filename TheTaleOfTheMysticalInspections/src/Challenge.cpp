@@ -35,10 +35,10 @@ using namespace game;
                 this->significance = significance;
             }
             bool challenge::runBasic(player player) {
+                cout << endl << "Challenge: \033[3m" << name << "\033[0m" << endl;
                 int winPoints = 0;
                 bool win;
                 vector<double> stats = player.getAllStats();
-                cout << endl << "Challenge: \033[3m" << name << "\033[0m" << endl;
                 cout << "Your Current Stats: " << endl << endl;
                     for (int i = 0; i < stats.size(); i++) {
                         cout << player.getAllStats()[i] << endl;

@@ -10,5 +10,6 @@ namespace game {
     class utility{
         public:
         static bool waitForEnter();
+        static void printAsciiArt(int);
     };
 }

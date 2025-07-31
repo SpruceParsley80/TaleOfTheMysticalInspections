@@ -13,8 +13,10 @@ using namespace game;
         string learningOpportunity::getName() {
             return name; 
         }
-        learningOpportunity::learningOpportunity(string name, const vector<double> &statRewards) {
+        learningOpportunity::learningOpportunity(string name, string question, string answer, const vector<double> &statRewards) {
             this->name = name;
+            this->correctAnswer = answer;
+            this->question = question;
             for (int i = 0; i < statRewards.size(); i++) {
                 this->statRewards.push_back(statRewards[i]);
             }

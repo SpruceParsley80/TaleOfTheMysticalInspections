@@ -18,7 +18,7 @@ namespace game {
             string correctAnswer;
             string getName();
             learningOpportunity();
-            learningOpportunity(string, const vector<double>&);
+            learningOpportunity(string, string, string, const vector<double>&);
             vector<double> getStatRewards();
             bool runBasic(string, string, player);
 
