@@ -35,7 +35,7 @@ int main()
     if (utility::waitForEnter()) {
         cout << "enter pressed :)" << endl;
         // system("clear");
-        utility::printAsciiArt(1);
+        utility::printAsciiArt(4);
         // cout << "           The Tale of the Mystical Inspections" << endl << 
         //         "           &$_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-$&" << endl <<
         //         "             AˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCvAˆCv" << endl <<
